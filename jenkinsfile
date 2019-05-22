@@ -5,7 +5,7 @@ pipeline{
     stages{
         stage("Test"){
             steps{
-                echo "Test in master"
+                echo "Test in slave"
             }
         }
     }
