@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-properties([ pipelineTriggers([upstream(threshold: 'STABLE', upstreamProjects: 'pipeTest, ')])])
+properties([ pipelineTriggers([upstream(upstreamProjects: 'pipeTest, ')])])
 pipeline{
     agent any
 
