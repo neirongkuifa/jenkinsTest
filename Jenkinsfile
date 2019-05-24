@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-properties([[$class: 'JiraProjectProperty'], pipelineTriggers([upstream(threshold: 'FAILURE', upstreamProjects: 'Pipe, ')])])
+properties([[$class: 'JiraProjectProperty'], pipelineTriggers([upstream(threshold: 'STABLE', upstreamProjects: 'Pipe, ')])])
 pipeline{
     agent any
 
